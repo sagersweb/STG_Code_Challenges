@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Alphanumeric Sum</title>
+<title>Roman Numeral Conversion</title>
 	<?php
 	function verifyRoman($romannumeral){
 		$anstoArray = str_split($romannumeral);
@@ -75,8 +75,7 @@
 			echo("<p>Sorry,<br /><em>" . $romannumeral . "</em><br />is not a valid Roman Numeral</p>");		
 			}
 			?>
-			
-				<form action="index.php" method="post">
+<form action="index.php" method="post">
 				<label>Enter a Roman Numeral<br>
 						<em>(for example: MCMXII)</em></label>
 				<input type="text" name="romanNumeral" value="" id="romanNumeral" /><br>
@@ -102,16 +101,19 @@
 			background-color:#FFF;
 			text-align:center;
 			}
-		span{
-			display:block;
-			font-weight:bold;
-			margin-top:15px;
+		ul{
+			text-align:left;
 			}
 	</style>
 </head>
 
 <body>
 <div>
+	<p>This converts Roman Numerals to Decimal numbers with the following criteria:</p>
+	<ul>
+		<li>There are no negative numbers in the roman numeral system</li>
+		<li>Validity checks are not extensive: IIIII or VI are both 5. However, any non-roman numeral rejects the whole string</li>
+	</ul>
 	<?php
 		if(isset($_POST["Submit"])){
 		echo(convertRomanNumeral($_POST["romanNumeral"]));
