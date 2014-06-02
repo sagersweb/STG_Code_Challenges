@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Alphanumeric Sum</title>
+	<script>
+	var alphanumericstring = prompt("Enter an alphanumeric string","A12B");
+	
+	function alphanumSum(alphanumericstring){
+		
+		var anstoArray = alphanumericstring.split(""); 
+		var letters = "";
+		var numbers = "";
+		var totalsum = 0;
+		for (x=0;x<anstoArray.length;x++){
+			if (!isNaN(anstoArray[x])){
+			numbers+=anstoArray[x] + ", ";
+			totalsum+=anstoArray[x]*1;
+			}
+			else{
+			letters+=anstoArray[x] + ", ";
+			}
+		}
+		document.writeln("<span>Original String:</span>" + alphanumericstring + "<br />");
+		document.writeln("<span>Non-Numbers:</span>" + letters + "<br />");
+		document.writeln("<span>Numbers:</span>" + numbers + "<br />");
+		document.writeln("<span>Sum of all numbers:</span>"  + totalsum);
+	}
+	</script>
+	<style type="text/css">
+		html, body{
+			margin:0px;
+			padding:0px;
+			font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+			word-break:break-all;
+			color:#333;
+			background-color:#999;
+			}
+		div{
+			width:280px;
+			margin:50px auto;
+			border:1px solid #000000;
+			padding:20px;
+			background-color:#FFF;
+			}
+		span{
+			display:block;
+			font-weight:bold;
+			margin-top:15px;
+			}
+	</style>
+</head>
+
+<body>
+<div>
+	<script>
+		alphanumSum(alphanumericstring);
+	</script>
+</div>
+</body>
+</html>
