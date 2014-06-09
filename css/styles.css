@@ -1,0 +1,49 @@
+body
+{
+	background-color: #333;
+	font-size:18px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align:center;
+}
+
+h1{
+	color:#FFF;
+	font-size:26px;
+	}
+
+div
+{
+	width: 30%;
+	margin: 0px auto;
+	background-color: #FFF;
+	min-width: 320px;
+	padding: 10px;
+	border-radius:25px;
+	text-align:left;
+}
+
+span.dateModified{
+	font-style:italic;
+	font-size:14px;
+	}
+	
+a{
+	text-decoration:none;
+	color:#000066;
+	}
+	
+a:hover{
+	color: #AA0000;
+	}	
+		
+ul{
+	margin:15px;
+	padding:0px;
+	}
+	
+li{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	}	
+	
