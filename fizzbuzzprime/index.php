@@ -61,15 +61,15 @@ i{
 				echo("buzz ");
 				}
 			if(primeCheck($x)){
-				echo("Prime");
+				echo("prime");
 			}
 		echo("</div>");
 		}
 ?>
 <script>
 $( document ).ready(function() {
-	$("div:contains('Prime')").css("color","rgb(255,0,0)");
-	$("div:contains('Prime')").css("font-style","italic");
+	$("div:contains('prime')").css("color","rgb(255,0,0)");
+	$("div:contains('prime')").css("font-style","italic");
 });
 </script>
 </body>
