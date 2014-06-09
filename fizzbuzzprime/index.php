@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Fizz Buzz Prime</title>
+<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
 <style type="text/css">
 body{
 	width:50%;
@@ -23,10 +24,13 @@ span{
 	font-weight:bold;
 	padding-right:10px;
 	}
+i{
+	color:red;
+	}	
 </style>
 </head>
 <body>
-<h1>FizzBuzz + Prime</h1>
+<h1>FizzBuzz + <i>Prime</i></h1>
 <?php
 	function primeCheck($x){
 		if ($x<=1){
@@ -62,5 +66,11 @@ span{
 		echo("</div>");
 		}
 ?>
+<script>
+$( document ).ready(function() {
+	$("div:contains('Prime')").css("color","rgb(255,0,0)");
+	$("div:contains('Prime')").css("font-style","italic");
+});
+</script>
 </body>
 </html>
