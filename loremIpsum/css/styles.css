@@ -1,0 +1,31 @@
+
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	color: #333;
+	background-color: #999;
+}
+
+div.input {
+	width: 320px;
+	margin: 50px auto;
+	border: 1px solid #000000;
+	padding: 20px;
+	background-color: #FFF;
+	text-align: center;
+}
+
+div.results {
+	width: 50%;
+	margin: 50px auto;
+	border: 1px solid #000000;
+	padding: 20px;
+	background-color: #FFF;
+	text-align: left;
+}
+
+ul {
+	text-align: left;
+}
