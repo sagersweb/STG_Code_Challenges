@@ -9,6 +9,7 @@
 </head>
 <body>
 <div class="input">
+<h3>Lorem Ipsum Generator</h3>
 	<form action="results.php" method="post">
 		<p>
 			<label>Choose number of words to generate</label>
@@ -21,6 +22,7 @@
 				<option value="AnimalIpsum">Animal Ipsum</option>
 				<option value="CheeseIpsum">Cheese Ipsum</option>
 				<option value="ColorIpsum">Color Ipsum</option>
+				<option value="GenesisIpsum">Genesis Ipsum</option>
 				<option value="GeographyIpsum">Geography Ipsum</option>
 				<option value="MathIpsum">Math Ipsum</option>
 				<option value="MedicalIpsum">Medical Ipsum</option>
