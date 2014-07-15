@@ -18,14 +18,22 @@ div.input {
 }
 
 div.results {
-	width: 640px;
+	width: 90%;
 	margin: 50px auto;
 	border: 1px solid #000000;
 	padding: 20px;
 	background-color: #FFF;
 	text-align: left;
+	padding:3%;
 }
 
 ul {
 	text-align: left;
+}
+
+@media screen and (min-width: 1024px){
+	div.results {
+		width:50%;
+		
+	}
 }

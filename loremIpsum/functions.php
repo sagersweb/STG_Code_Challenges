@@ -1,19 +1,24 @@
 <?php
 
+function generatePunctuation(){
+	$punctuationlist = array (".",".",".",".",".",".",".",".",".",".","?","!");
+	return($punctuationlist[mt_rand(0,11)] . " ");
+	}
+
 function randomizeArray($string_in, $number_of_words){
-	$paragraphlength = array(5,7,11,13,17,19);
+	$sentencelength = array(5,7,11,13,17,19);
 	$arraylist = explode(" ",$string_in);
 	shuffle($arraylist);
 	$string_out = "";
-		$sentence = $paragraphlength[rand(0,count($paragraphlength)-1)];
+		$sentence = $sentencelength[mt_rand(0,5)];
 		$paragraph = 0;
 	for($x=1; $x<=$number_of_words; $x++){
 		shuffle($arraylist);
 		if($x % $sentence==0){
-			$string_out = rtrim($string_out) . ". ";
-			$sentence = $paragraphlength[rand(0,count($paragraphlength)-1)];
+			$string_out = rtrim($string_out) . generatePunctuation();
+			$sentence = $sentencelength[mt_rand(0,5)];
 			$paragraph++;
-			if ($paragraph >=5){
+			if ($paragraph >= (mt_rand(5,9))){
 				$string_out .="<br /><br />";
 				$paragraph=0;
 				}
@@ -55,6 +60,8 @@ function randomizeArray($string_in, $number_of_words){
 	$Palindromes="Adinida Anna Ara Ava Bob Eve Hannah Liril Nauruan Otto Rotavator Senones Sinis Susus aba aga aha aibohphobia ala alala alula ama ana anana araara arara ataata ava awa bib bob bub civic dad debed deed degged deified deked deled deleveled denned dered detartrated dewed dexed did dud eke eme ere esse eve evitative ewe eye gag gig gog goog hadedah hah hajjah halalah hallah heh huh immi irori kaiak kayak keek kelek kinnikinnik kook lemel level ma'am madam malam mallam marram mim minim mom mum murdrum naan nan neven non noon nun oho omo ono oppo otto oxo pap peep peeweep pep pip pip-pip poop pop pull-up pullup pup put-up racecar radar redder redivider refer reifier releveler renner repaper reviver revver rotator rotavator rotor sagas samas sedes sees seities seles selles sememes semes seres serres sesses sexes shahs simis siris sis solos soosoos sos stats stets stots succus sulus susus tallat tat tattarrattat tenet terret tet tirrit tit toot torot tot tut tut-tut wow yay zzz";
 	
 	$Buzzwords="accountable-talk aggregator agile ajax algorithm alignment analytics antifragile at-the-end-of-the-day back-end ballpark-figure bandwidth benchmarking best-in-class best-of-breed best-practices beta big-data big-society bizmeth bleeding-edge blog boil-the-frog boil-the-ocean brand break-through-the-clutter brick-and-mortar bricks-and-clicks bring-to-the-table bring-your-own-device building-capabilities business-process-outsourcing business-to-business business-to-consumer buzzword buzzword-compliant calibrate-expectations capitalist clear-goal clickthrough client-centric close-the-loop cloud cloud-computing cms co-opetition collaboration come-to-jesus-moment content-management content-management-system content-marketing convergence core-competency countless cross-platform crystallization customer-centric data-mining data-science datafication deep-dive design-pattern devops digital-divide digital-remastering digital-rights-management digital-signage disruptive-innovation disruptive-technologies diversity document-management dot-bomb downsizing drinking-the-kool-aid e-learning eating-your-own-dogfood employer-branding empowerment enable engine enterprise enterprise-content-management enterprise-service-bus entitlement event-horizon exit-strategy eyeballs face-time folksonomy framework free-value fulfilment-issues functional-training fuzzy-logic generation-X generation-Y global-citizen globalization granular grow guard-rails headlights herding-cats higher-order-thinking holistic holistic-approach HTML5 hyperlocal immersion impact information-highway information-society information-superhighway innovation integrated-marketing-solution integration invested-in knowledge-process-outsourcing leverage logistics long-tail low-hanging-fruit make-it-pop management-visibility mashup milestone mindshare mission-critical mobile modularity moving-forward nanotechnology netiquette new-economy next-generation nextgen offshoring on-the-runway organic-growth outside-the-box paas pain-point pandering paradigm paradigm-shift part-of-our-dna peel-back-the-onion pizzazz plutocracy podcasting political-capital portal proactive push-the-envelope quick-win reach-out real-time relaying responsive return-on-investment reverse-fulfilment rightshoring robust run-like-a-business saas scalability sea-change seamless sensorization serum share-options shoot sisterhood skeuomorphic social-bookmarking social-currency social-software socialist socialize solution sox spam spin-up stakeholder startup storytelling strategic-communication strategy streamline struts student-engagement survival-strategy sustainability sync-up synergy systems-development-life-cycle tagging tee-off terrorist think-outside-the-box touch-base touchpoint transformation transmedia truthiness user-generated-content value-added viral virtualization visibility vlogging vortal warfighter web-2.0 web-services webinar weblog wellness wikiality win-win workflow";
+	
+	$DrSeuss="August Grickle-grass I I'll Lerkim Lifted Lorax Once-ler Once-ler's Sally Sam Slupp Snuvv Street Thing-One Thing-Two Whisper-ma-Phone Whoville a about after all alone always am amount and another any are as ask asked at away back bad ball bar-ba-loots be bed bees before beft bent bet big bippo-no-bungus birds bit bite blows bofa book books bow box bump bumps but by cake call came can careful cat cents clear clothes cold come could count crows cup dank day dear deep did diffendoofer dish do don't door dots down ear ears eggs end enough ever excepting fall fan far fast fear fell fiffer-feffer-feff fifteen find fish fizza-ma-wizza-ma-dill floob-boober-bab-boober-bubs flunnel fly for fox from fun fun-in-a-box funny ga-fluppted game games gave get give glikker glove gluppity-glupp go gone good gootch got gown grandfather gray great-great-great- green grickily grinch grows gructus grunts grush gruvvulous guff had hakken-kraks hall ham ham-ikka-schnim-ikka-schnam-ikka-schnopp hand hands has hat have he he'll head hear her here hides high him his hit hold hole home hook hop hops hose house how hte humpf-humpf-a-dumpfer if in into is it jertain jibboo jicker jill-ikka-jast jogg-oons jump jumps just kicks kind kinds kite kites knock know knows kweet kwigger last lerkim let lets lifted like lit little lives long look looked lorax lot lots lurks made make makes man mat me mess midnights midwinter miff-muffered milk mind moof most mother mothers murky-mooshy my na-nupp nail near nerd net new nizzards no nooth nose not nothing now obsk of oh old on once once-ler one oobleck our out own pack paid pail pat pay peeks people perhaps pick picked pink play playthings plop pot proper pulls put quimney rake ran red rid rink-rinker-fink roof rope run sad said sala-ma-goox sally sank sat saw say says schlopp schloppity-schlopp secret secrets see shake shame she shell shine ship shook should show shut shutters since sing sit skritz slow-and-sour slupps smallish smells snail sneedle sneetches snergelly snuvs so some somebody something sometimes somewhere sounding sounds spazzim speaks special squitsch stand stays step still stood stop store strange string strings sun sunny tail take taken tall tame teeth tell tells that the their them then there these they thing things think this thnadners thneeds those through thump thumps tin tip to today too top toss town toy trees trick tricks truffula two under up up-up-up us very vipper wall want was way we well went were wet what when where whisper-ma-phone whispers white who why will willing wind wish with wocket won't wood would wumbus yekko yes yet you you're you've youhe your yuzz yuzz-a-ma-tuzz zamp zatz-it zax zillow zizzer-zazzer-zuzz zlock zong zummers";
 		
 		switch($ipsumtype){
 			case "Geography":
@@ -107,6 +114,10 @@ function randomizeArray($string_in, $number_of_words){
 			
 			case "Buzzwords":
 				echo(randomizeArray($Buzzwords, $numberofwords));
+			break;
+			
+			case "DrSeuss":
+				echo(randomizeArray($DrSeuss, $numberofwords));
 			break;
 			
 			case "Lorem":

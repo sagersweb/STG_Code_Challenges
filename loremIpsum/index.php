@@ -24,6 +24,7 @@
 				<option value="Buzzwords">Buzzwords Ipsum</option>
 				<option value="Cheese">Cheese Ipsum</option>
 				<option value="Color">Color Ipsum</option>
+				<option value="DrSeuss">Dr. Seuss Ipsum</option>
 				<option value="Farm">Farm Ipsum</option>
 				<option value="Genesis">Genesis Ipsum</option>
 				<option value="Geography">Geography Ipsum</option>
