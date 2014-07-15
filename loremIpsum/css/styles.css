@@ -27,6 +27,10 @@ div.results {
 	padding:3%;
 }
 
+#infobox{
+	height:3em;
+	}
+
 ul {
 	text-align: left;
 }
