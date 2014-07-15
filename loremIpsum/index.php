@@ -32,7 +32,6 @@
 				<option value="Math" title="Generate text using math terms">Math Ipsum</option>
 				<option value="Medical" title="Generate text using medical terms">Medical Ipsum</option>
 				<option value="Palindromes" title="Generate text using words that are palindromes">Palindromes Ipsum</option>
-				<option value="Psychological" title="Generate text using pyschological terms">Pyschological Ipsum</option>
 			</select>
 		</p>
 		<div id="infobox">
