@@ -9,9 +9,7 @@
 <body>
 <div class="results">
 	<p style="text-align:center"><a href="index.php">Generate Another</a></p>
-	<?php
-	GenerateLorem($_POST["numberofwords"],$_POST["ipsumtype"]);
-	?>
+	<?php 	GenerateLorem($_POST["numberofwords"],$_POST["ipsumtype"]); 	?>
 </div>
 </body>
 </html>

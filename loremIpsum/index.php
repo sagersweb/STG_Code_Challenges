@@ -9,24 +9,29 @@
 </head>
 <body>
 <div class="input">
-<h3>Lorem Ipsum Generator</h3>
+	<h3>Lorem Ipsum Generator</h3>
 	<form action="results.php" method="post">
 		<p>
 			<label>Choose number of words to generate</label>
 			<input type="text" name="numberofwords" value="1000" id="numberofwords" />
 		</p>
 		<p>
-			<label>Select LoremIpsum type</label>
+			<label>Select Lorem Ipsum type</label>
 			<select name="ipsumtype" value="" id="ipsumtype">
-				<option value="LoremIpsum">Lorem Ipsum</option>
-				<option value="AnimalIpsum">Animal Ipsum</option>
-				<option value="CheeseIpsum">Cheese Ipsum</option>
-				<option value="ColorIpsum">Color Ipsum</option>
-				<option value="GenesisIpsum">Genesis Ipsum</option>
-				<option value="GeographyIpsum">Geography Ipsum</option>
-				<option value="MathIpsum">Math Ipsum</option>
-				<option value="MedicalIpsum">Medical Ipsum</option>
-				<option value="PsychologicalIpsum">Pyschological Ipsum</option>
+				<option value="Lorem">Lorem Ipsum</option>
+				<option value="Animal">Animal Ipsum</option>
+				<option value="Astronomy">Astronomy Ipsum</option>
+				<option value="Buzzwords">Buzzwords Ipsum</option>
+				<option value="Cheese">Cheese Ipsum</option>
+				<option value="Color">Color Ipsum</option>
+				<option value="Farm">Farm Ipsum</option>
+				<option value="Genesis">Genesis Ipsum</option>
+				<option value="Geography">Geography Ipsum</option>
+				<option value="Insect">Insect Ipsum</option>
+				<option value="Math">Math Ipsum</option>
+				<option value="Medical">Medical Ipsum</option>
+				<option value="Palindromes">Palindromes Ipsum</option>
+				<option value="Psychological">Pyschological Ipsum</option>
 			</select>
 		</p>
 		<input type="Submit" name="Submit" value="Submit" id="Submit" />
