@@ -24,7 +24,7 @@
 				<option value="Buzzwords" title="Generate text using industry buzzwords">Buzzwords Ipsum</option>
 				<option value="Cheese" title="Generate text using names of cheeses">Cheese Ipsum</option>
 				<option value="Color" title="Generate text using colors">Color Ipsum</option>
-				<option value="DrSeuss" title="Generate text words from Dr. Seuss books">Dr. Seuss Ipsum</option>
+				<option value="DrSeuss" title="Generate text using words from Dr. Seuss books">Dr. Seuss Ipsum</option>
 				<option value="Farm" title="Generate text using words relating to farming">Farm Ipsum</option>
 				<option value="Genesis" title="Generate text using words from the first chapter of Genesis in the Bible">Genesis Ipsum</option>
 				<option value="Geography" title="Generate text using geography terms">Geography Ipsum</option>
