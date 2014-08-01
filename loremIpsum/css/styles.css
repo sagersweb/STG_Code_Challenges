@@ -8,8 +8,13 @@ body {
 	background-color: #999;
 }
 
+
+h3{
+	text-align:center;
+	}
+	
 div.input {
-	width: 320px;
+	width: 400px;
 	margin: 50px auto;
 	border: 1px solid #000000;
 	padding: 20px;
