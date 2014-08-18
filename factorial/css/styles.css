@@ -1,0 +1,48 @@
+
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	color: #333;
+	background-color: #999;
+}
+
+
+h3{
+	text-align:center;
+	}
+	
+div.input {
+	width: 400px;
+	margin: 50px auto;
+	border: 1px solid #000000;
+	padding: 20px;
+	background-color: #FFF;
+	text-align: left;
+}
+
+div.results {
+	width: 90%;
+	margin: 50px auto;
+	border: 1px solid #000000;
+	padding: 20px;
+	background-color: #FFF;
+	text-align: left;
+	padding:3%;
+}
+
+#infobox{
+	height:3em;
+	}
+
+ul {
+	text-align: left;
+}
+
+@media screen and (min-width: 1024px){
+	div.results {
+		width:50%;
+		
+	}
+}
