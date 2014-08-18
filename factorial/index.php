@@ -30,7 +30,7 @@ function ajaxfactorial(inputString) {
 			<input type="text" name="number" id="number"  onkeyup="ajaxfactorial(this.value)" />
 		</p>
 	</form>
-	<p><span id="factorialVal"></span></p>
+	<h2><span id="factorialVal"></span></h2>
 </div>
 </body>
 </html>

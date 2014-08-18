@@ -8,12 +8,12 @@ function factorial($number){
 	
 $number=$_REQUEST["number"];
 	if($number==0){
-		echo 1;
+		echo "0! = 1";
 		}
 	elseif(($number>170) || ($number < 0)){
 		echo("NULL");
 	}
 	else{
-		echo factorial($number);
+		echo $number . "! = " . factorial($number);
 	}
 ?>
