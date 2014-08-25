@@ -1,0 +1,50 @@
+
+old_glory {
+	width: 618px;
+	height: 325px;
+	position: relative;
+	display: block;
+	margin: 0px auto;
+	font-size:15px;
+	outline:1px solid #000;
+}
+
+blue_sky {
+	background-color: rgb(4, 30, 66);
+	width: 247px;
+	height: 165px;
+	display: block;
+	position: absolute;
+	padding:5px;
+	overflow:hidden;
+	font-size:14px;
+}
+
+star_line1{
+	color:#FFF;
+	display:block;
+	margin-left:5px;
+	}
+star_line2{
+	color:#FFF;
+	display:block;
+	margin-left:23px;
+	}	
+	
+.fa-star{
+	margin:0px 14px 0px 13px;
+	}	
+
+red_stripe {
+	background-color: rgba(214,33,0,1.00);
+	height: 25px;
+	width: 100%;
+	display: block;
+}
+
+white_stripe {
+	background-color: rgba(255,255,255,1.00);
+	height: 25px;
+	width: 100%;
+	display: block;
+}
