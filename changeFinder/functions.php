@@ -38,11 +38,11 @@ function findChange($number){
 		$nickels += 1;
 		$number -= 0.05;
 	}
-	while($number >= 0.01){
+	while($number >= 0){
 		$pennies += 1;
 		$number -= 0.01;
 	}
-	$amount = array("Hundreds" => $hundreds,"Fifties" => $fiftys,"Twenties" => $twenties,"Tens" => $tens,"Fives" => $fives,"Ones" => $ones,"Quarters" => $quarters,"Dimes" => $dimes,"Nickels" => $nickels,"Pennies" => $pennies);
+	$amount = array($hundreds,$fiftys,$twenties,$tens,$fives,$ones,$quarters,$dimes,$nickels,$pennies);
 /*	echo($hundreds);
 	echo($fiftys);
 	echo($twenties);
