@@ -2,7 +2,7 @@ body
 {
 	background-color: #333;
 	font-size:18px;
-	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-align:center;
 }
 
@@ -23,8 +23,9 @@ div
 }
 
 span.dateModified{
-	font-style:italic;
-	font-size:14px;
+	font-size: 14px;
+	text-align: right;
+	float: right;
 	}
 	
 a{
